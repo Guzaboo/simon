@@ -21,21 +21,22 @@
             </nav>
             <hr/>
         </header>
-        <main class="container-fluid bg-secondary text-center">
+        <main class="bg-secondary">
             <div class="players">
-                " Player: " <span class="player-name">Mystery player</span>
+                Player: <span class="player-name">Mystery player</span>
             </div>
             <div class="game">
-                <label for="count">Score</label>
-                <input type="text" id="count" value="--" readonly>
-                <br/>
-                <div><button>Reset</button></div>
-                <br/>
                 <div class="button-container">
                     <button class="button-top-left"></button>
                     <button class="button-top-right"></button>
                     <button class="button-bottom-left"></button>
                     <button class="button-bottom-right"></button>
+                    
+                    <div class="controls center">
+                        <div class="game-name">Simon<sup>®</sup></div>
+                        <div class="score center">--</div>
+                        <div><button class="btn btn-primary">Reset</button></div>
+                    </div>
                 </div>
             </div>
         </main>
