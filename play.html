@@ -21,70 +21,22 @@
             </nav>
             <hr/>
         </header>
-        <main>
-            <div>
-                <p>Player: Mystery player</p>
+        <main class="container-fluid bg-secondary text-center">
+            <div class="players">
+                " Player: " <span class="player-name">Mystery player</span>
+            </div>
+            <div class="game">
                 <label for="count">Score</label>
                 <input type="text" id="count" value="--" readonly>
-            </div>
-            <br/>
-            <div><button>Reset</button></div>
-            <br/>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                >
-                                    <circle cx="100" cy="100" r="100" fill="green"/>
-                                </svg>
-                            </button>
-                        </td>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                >
-                                    <circle cx="0" cy="100" r="100" fill="red"/>
-                                </svg>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                >
-                                    <circle cx="100" cy="0" r="100" fill="blue"/>
-                                </svg>
-                            </button>
-                        </td>
-                        <td>
-                            <button>
-                                <svg
-                                    aria-hidden="true"
-                                    viewBox="0 0 100 100"
-                                    height="100"
-                                    width="100"
-                                >
-                                    <circle cx="0" cy="0" r="100" fill="yellow"/>
-                                </svg>
-                            </button>
-                        </td>
-                    </tr>
-                </table>
+                <br/>
+                <div><button>Reset</button></div>
+                <br/>
+                <div class="button-container">
+                    <button class="button-top-left"></button>
+                    <button class="button-top-right"></button>
+                    <button class="button-bottom-left"></button>
+                    <button class="button-bottom-right"></button>
+                </div>
             </div>
         </main>
 
