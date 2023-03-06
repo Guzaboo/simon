@@ -27,15 +27,15 @@
             </div>
             <div class="game">
                 <div class="button-container">
-                    <button class="button-top-left"></button>
-                    <button class="button-top-right"></button>
-                    <button class="button-bottom-left"></button>
-                    <button class="button-bottom-right"></button>
+                    <button id="b-tl" class="game-button button-top-left" onclick="game.pressButton(this)"></button>
+                    <button id="b-tr" class="game-button button-top-right" onclick="game.pressButton(this)"></button>
+                    <button id="b-bl" class="game-button button-bottom-left" onclick="game.pressButton(this)"></button>
+                    <button id="b-br" class="game-button button-bottom-right" onclick="game.pressButton(this)"></button>
                     
                     <div class="controls center">
                         <div class="game-name">Simon<sup>®</sup></div>
                         <div class="score center">--</div>
-                        <div><button class="btn btn-primary">Reset</button></div>
+                        <div><button class="btn btn-primary" onclick="game.reset()">Reset</button></div>
                     </div>
                 </div>
             </div>
