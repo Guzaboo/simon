@@ -104,7 +104,7 @@ class Game {
     }
 
     getPlayerName() {
-        return localStorage.getItem('userName') ?? 'Mystery player';
+        return localStorage.getItem('username') ?? 'Mystery player';
     }
     
     addButton() {
@@ -143,7 +143,7 @@ class Game {
     }
     
     updateScores(userName, score, scores) {
-        const date = new Date().toLocaleDateString();
+        const date = new Date().toLocaleDateString('en-us', { year:"numeric", month:"long", day:"numeric"});
         const newScore = { name: userName, score: score, date: date };
     
         let found = false;
