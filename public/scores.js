@@ -17,7 +17,7 @@ async function loadScores() {
 
 function displayScores(scores) {
     const scoresText = localStorage.getItem('scores');
-    if (scoresText) {
+    if (!scores && scoresText) {
         scores = JSON.parse(scoresText);
     }
 
