@@ -1,6 +1,6 @@
 function loadUsername() {
     let usernameEl = document.querySelector('.player-name')
-    usernameEl.textContent = localStorage.getItem("username") ?? 'Mystery player'
+    usernameEl.textContent = localStorage.getItem("userName") ?? 'Mystery player'
 }
 
 loadUsername()
@@ -104,7 +104,7 @@ class Game {
     }
 
     getPlayerName() {
-        return localStorage.getItem('username') ?? 'Mystery player';
+        return localStorage.getItem('userName') ?? 'Mystery player';
     }
     
     addButton() {
